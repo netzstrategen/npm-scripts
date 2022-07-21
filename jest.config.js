@@ -19,11 +19,11 @@ module.exports = {
     "^.+\\.module\\.(css|less)$": "identity-obj-proxy",
 
     // Handle CSS imports (without CSS modules)
-    "^.+\\.(css|less)$": "@netzstrategen/npm-scripts/__mocks__/styleMock.ts",
+    "^.+\\.(css|less)$": "@makers99/npm-scripts/__mocks__/styleMock.ts",
 
     // Handle image imports
     // https://jestjs.io/docs/webpack#handling-static-assets
-    "^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$": `@netzstrategen/npm-scripts/__mocks__/fileMock.ts`,
+    "^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$": `@makers99/npm-scripts/__mocks__/fileMock.ts`,
   },
   moduleDirectories: ['<rootDir>node_modules', '<rootDir>/src', '<rootDir>/test'],
   setupFilesAfterEnv: ['./jest.setup.js'],

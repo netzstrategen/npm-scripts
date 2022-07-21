@@ -5,12 +5,12 @@ This package contains basic `npm` scripts configs.
 ## Usage
 
 ```bash
-pnpm i -D @netzstrategen/npm-scripts
+pnpm i -D @makers99/npm-scripts
 
 # or with NPM
-npm i --save-dev @netzstrategen/npm-scripts
+npm i --save-dev @makers99/npm-scripts
 # or with Yarn
-pnpm i -D @netzstrategen/npm-scripts
+pnpm i -D @makers99/npm-scripts
 ```
 
 You will need to install all the required dependencies for each configuration. If you are intended to use all configurations, you can run the following code. Otherwise, we recommend you installing only those required for each configuration:
@@ -26,7 +26,7 @@ pnpm i -D @babel/preset-env @testing-library/jest-dom @typescript-eslint/eslint-
 ```js
 // babel.config.js
 
-const babelConfig = require('@netzstrategen/npm-scripts').babel;
+const babelConfig = require('@makers99/npm-scripts').babel;
 
 module.exports = babelConfig;
 ```
@@ -44,14 +44,14 @@ Eslint configuration is different because is a function where you are able to re
 To remove this configuration you need to pass an object:
 
 ```js
-const eslintConfig = require('@netzstrategen/npm-scripts').eslint({ jest: false, cypress: false });
+const eslintConfig = require('@makers99/npm-scripts').eslint({ jest: false, cypress: false });
 ```
 
 ```js
 // ESLint + Cypress + Jest configurations
 // .eslintrc.js
 
-const eslintConfig = require('@netzstrategen/npm-scripts').eslint();
+const eslintConfig = require('@makers99/npm-scripts').eslint();
 
 module.exports = eslintConfig;
 ```
@@ -71,7 +71,7 @@ pnpm i -D @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript
 ```js
 // prettier.config.js
 
-const prettierConfig = require('@netzstrategen/npm-scripts').prettier;
+const prettierConfig = require('@makers99/npm-scripts').prettier;
 
 module.exports = prettierConfig;
 ```
@@ -87,7 +87,7 @@ pnpm i -D prettier
 ```js
 // stylelint.config.js
 
-const stylelintConfig = require('@netzstrategen/npm-scripts').stylelint;
+const stylelintConfig = require('@makers99/npm-scripts').stylelint;
 
 module.exports = stylelintConfig;
 ```
@@ -103,7 +103,7 @@ pnpm i -D stylelint stylelint-config-prettier stylelint-prettier prettier
 ```js
 // postcss.config.js
 
-const postcssConfig = require('@netzstrategen/npm-scripts').postcss;
+const postcssConfig = require('@makers99/npm-scripts').postcss;
 
 module.exports = postcssConfig;
 ```
@@ -121,7 +121,7 @@ pnpm i -D autoprefixer cssnano postcss postcss-at-rules-variables postcss-functi
 ```js
 // tailwind.config.js
 
-const tailwindConfig = require('@netzstrategen/npm-scripts').tailwind;
+const tailwindConfig = require('@makers99/npm-scripts').tailwind;
 
 module.exports = tailwindConfig;
 ```
@@ -137,7 +137,7 @@ pnpm i -D tailwindcss
 ```js
 // lint-staged.config.js
 
-const lintStagedConfig = require('@netzstrategen/npm-scripts').lintStaged;
+const lintStagedConfig = require('@makers99/npm-scripts').lintStaged;
 
 module.exports = lintStagedConfig;
 ```
@@ -172,7 +172,7 @@ If the answer is "yes, it needs to be local to my project", then you can extend
 any config by overriding or merging the exported object with your custom config:
 
 ```js
-const eslintConfig = require('@netzstrategen/npm-scripts').eslint
+const eslintConfig = require('@makers99/npm-scripts').eslint
 
 // Merging
 module.exports = {
