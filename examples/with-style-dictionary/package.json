@@ -1,0 +1,15 @@
+{
+  "name": "with-style-dictionary",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "style-dictionary build --config style-dictionary.config.js"
+  },
+  "dependencies": {
+    "@makers99/npm-scripts": "file:../../"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.7.1"
+  }
+}
