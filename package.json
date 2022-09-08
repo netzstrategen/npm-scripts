@@ -1,6 +1,10 @@
 {
   "name": "@makers99/npm-scripts",
+<<<<<<< HEAD
   "version": "1.0.5",
+=======
+  "version": "1.0.4",
+>>>>>>> e1ddc1f (1.0.4)
   "description": "",
   "repository": {
     "type": "git",
