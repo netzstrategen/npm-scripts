@@ -82,6 +82,51 @@ module.exports = prettierConfig;
 pnpm i -D prettier
 ```
 
+## Style Dictionary
+
+Style Dictionary, as Eslint configuration, is also a function where you are able to pass the destination folder where the files are going to be save and you can also pass extra platforms or override the default one.
+
+To use the default configuration:
+
+```js
+// style-dictionary.config.js
+
+const styleDictionaryConfig = require('@makers99/npm-scripts').styleDictionary();
+
+module.exports = styleDictionaryConfig;
+```
+
+To change the destination path:
+
+```js
+// style-dictionary.config.js
+
+const styleDictionaryConfig = require('@makers99/npm-scripts').styleDictionary({ dest: 'new/location/path' });
+
+module.exports = styleDictionaryConfig;
+```
+
+To override the default platforms:
+
+```js
+// style-dictionary.config.js
+
+const styleDictionaryConfig = require('@makers99/npm-scripts').styleDictionary({ platforms: {
+    js: {
+        transformGroup: 'js',
+        files: [...],
+    }
+} });
+
+module.exports = styleDictionaryConfig();
+```
+
+**Required dependencies:**
+
+```bash
+pnpm i -D style-dictionary
+```
+
 ## Stylelint
 
 ```js
