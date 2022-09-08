@@ -12,6 +12,8 @@
     ".eslintrc.js",
     ".prettierrc.js",
     "babel.config.js",
+    "etc/style-dictionary/formatters/chakra.js",
+    "etc/style-dictionary/formatters/index.js",
     "index.js",
     "jest.config.js",
     "jest.setup.js",
