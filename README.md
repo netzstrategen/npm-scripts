@@ -140,7 +140,7 @@ module.exports = stylelintConfig;
 **Required dependencies:**
 
 ```bash
-pnpm i -D stylelint stylelint-config-prettier stylelint-prettier prettier
+pnpm i -D stylelint stylelint-order stylelint-config-prettier stylelint-prettier prettier
 ```
 
 ## PostCSS
