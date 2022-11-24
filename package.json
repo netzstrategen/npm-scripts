@@ -55,6 +55,7 @@
     "prettier": ">= 2",
     "style-dictionary": ">= 3.7",
     "stylelint": ">= 13",
+    "stylelint-order": ">= 13",
     "stylelint-config-prettier": ">=9",
     "stylelint-prettier": ">= 1",
     "typescript": ">=4"
@@ -151,6 +152,9 @@
       "optional": true
     },
     "stylelint-config-prettier": {
+      "optional": true
+    },
+    "stylelint-order": {
       "optional": true
     },
     "stylelint-prettier": {
