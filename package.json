@@ -55,7 +55,7 @@
     "prettier": ">= 2",
     "style-dictionary": ">= 3.7",
     "stylelint": ">= 13",
-    "stylelint-order": ">= 13",
+    "stylelint-order": ">= 5",
     "stylelint-config-prettier": ">=9",
     "stylelint-prettier": ">= 1",
     "typescript": ">=4"
