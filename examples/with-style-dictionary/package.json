@@ -10,6 +10,7 @@
     "@makers99/npm-scripts": "file:../../"
   },
   "devDependencies": {
+    "sd-tailwindcss-transformer": "1.3.0",
     "style-dictionary": "^3.7.1"
   }
 }

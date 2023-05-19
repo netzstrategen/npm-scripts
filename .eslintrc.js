@@ -43,7 +43,7 @@ const eslintConfig = {
   }
 };
 
-module.exports = ({ jest = true, cypress = true } = {}) => {
+module.exports = ({ jest = false, cypress = false } = {}) => {
   if (jest) {
     eslintConfig.env.jest = true;
     eslintConfig.extends.push('plugin:jest/recommended');
