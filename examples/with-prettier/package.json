@@ -1,0 +1,12 @@
+{
+  "name": "with-prettier",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --write --ignore-unknown index.js"
+  },
+  "dependencies": {
+    "@makers99/npm-scripts": "file:../../"
+  }
+}

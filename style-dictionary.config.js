@@ -1,6 +1,3 @@
-const path = require("path");
-require(path.resolve(__dirname, "./etc/style-dictionary/formatters"));
-
 module.exports = ({
   source = ["tmp/tokens.json"],
   dest = "src/assets/tokens",
@@ -26,6 +23,9 @@ module.exports = ({
   }
 
   if (transformChakraUI) {
+    const path = require("path");
+    require(path.resolve(__dirname, "./etc/style-dictionary/formatters"));
+
     platformsJSFiles.push({
       destination: `${dest}/semantic-tokens.js`,
       format: "chakra/semantic-tokens",
